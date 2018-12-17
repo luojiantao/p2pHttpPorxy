@@ -280,7 +280,7 @@ class Server(object):
         print("This is Handler Fun")
         pass
     
-    def __init__(self,host = "123",port = 0, mothed="test"):
+    def __init__(self,host ="123",port=0, mothed="test"):
         if mothed == "p2p_client_server":
             pass
             #1.连接p2p服务器
