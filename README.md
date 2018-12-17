@@ -9,4 +9,6 @@
 使用p2p TCP打洞的原理（需要路由器硬件支持，不过一般都支持，至少我在的公司是这样的）
 
 使用步骤
-1.
+1.在开发环境和工作机都能访问的机器上运行 p2p_seed_server.py（推荐 工作环境上运行这个脚本）
+2.在工作机上运行 demo_p2p_client_server.py（需要修改代码，使它能指向 p2p_seed_server.py 的地址和端口）
+3.在开发环境运行demo_client.py（配置同样和demo_p2p_client_server.py 一样），终端提示连接成功，打印出HTTP代理的地址和端口
