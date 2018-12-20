@@ -4,11 +4,28 @@
 
 运行着几个文件，能让你使工作机作为HTTP代理服务器，使开发环境通过HTTP代理访问外网
 
+网络环境如下
+
+![img](file:///C:/Users/41290/AppData/Local/Packages/Microsoft.Office.OneNote_8wekyb3d8bbwe/TempState/msohtmlclip/clip_image001.png) 
+
 ## 原理：
 
-使用p2p TCP打洞的原理（需要路由器硬件支持，不过一般都支持，至少我在的公司是这样的）
+使用p2p TCP打洞的原理（需要路由器硬件支持，不过一般都支持，至少我在的公司是这样的），如果路由环境是会记录端口的话，就需要自己实现代理客户端。目前暂时不支持这种环境
+
+```sequence
+   
+   Client->>SeedServer:register
+   Server->>SeedServer:register
+   SeedServer-->Server:ser_IP,ser_port,cli_IP,cli_port
+   SeedServer-->Client:ser_IP,ser_port
+   Server->>Client:connect(会提示连接失败)
+   Client->>Server:connect,连接成功，证明p2p打洞完成。提示HTTP代理服务地址和端口
+```
 
 ### 使用步骤
-1.在开发环境和工作机都能访问的机器上运行 p2p_seed_server.py（推荐 工作环境上运行这个脚本）
-2.在工作机上运行 demo_p2p_client_server.py（需要修改代码，使它能指向 p2p_seed_server.py 的地址和端口）
-3.在开发环境运行demo_client.py（配置同样和demo_p2p_client_server.py 一样），终端提示连接成功，打印出HTTP代理的地址和端口
+
+1. 三个文件中初始化的地址都为，seed_server的地址和端口（按照自己喜好设置）
+2. 在seed机器上运行seed_server.py
+3. 在server上运行client_server.py
+4. 在client上运行client.py，最终会在终端提示连接成功，并答应http代理服务的地址和端口
+
