@@ -21,7 +21,7 @@
    Server->>Client:connect(会提示连接失败)
    Client->>Server:connect,连接成功，证明p2p打洞完成。提示HTTP代理服务地址和端口
 ```
-
+![ddjdjdjj](https://github.com/luojiantao/p2pHttpPorxy/blob/master/image/1.png) 
 ### 使用步骤
 
 1. 三个文件中初始化的地址都为，seed_server的地址和端口（按照自己喜好设置）
