@@ -29,4 +29,3 @@
 3. 在server上运行client_server.py
 4. 在client上运行client.py，最终会在终端提示连接成功，并答应http代理服务的地址和端口
 
- ![image](https://github.com/ButBueatiful/dotvim/raw/master/screenshots/vim-screenshot.jpg)
