@@ -6,7 +6,7 @@
 
 网络环境如下
 
-![img](file:///C:/Users/41290/AppData/Local/Packages/Microsoft.Office.OneNote_8wekyb3d8bbwe/TempState/msohtmlclip/clip_image001.png) 
+![img](https://github.com/luojiantao/p2pHttpPorxy/tree/master/image/clip_image001.png) 
 
 ## 原理：
 
