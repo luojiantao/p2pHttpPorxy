@@ -6,7 +6,7 @@
 
 网络环境如下
 
-![ddjdjdjj](https://github.com/luojiantao/p2pHttpPorxy/tree/master/image/clip_image001.png) 
+![ddjdjdjj](https://github.com/luojiantao/p2pHttpPorxy/blob/master/image/clip_image001.png) 
 
 ## 原理：
 
