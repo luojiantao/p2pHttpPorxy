@@ -6,7 +6,7 @@
 
 网络环境如下
 
-![图片有问题，待更新](https://github.com/luojiantao/p2pHttpPorxy/blob/master/image/clip_image001.png) 
+![图片有问题，待更新](https://github.com/luojiantao/p2pHttpPorxy/blob/master/image/2.png) 
 
 ## 原理：
 
