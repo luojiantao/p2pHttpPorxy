@@ -187,7 +187,9 @@ class Server(object):
         while True:
             try:
                 conn,addr=self.s_s.accept()
-                threading.Thread(target=self.handler,args=(conn,addr)).start()
+                t = threading.Thread(target=self.handler,args=(conn,addr))
+                t.setDaemon(True)
+                t.start()
             except Exception  as e:
                 print(str(e))
                 print("\nExcept happend")
